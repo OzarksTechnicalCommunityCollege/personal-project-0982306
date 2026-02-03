@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock%}</title>
+    <title>{% block title %}Honkai: Star Rail{% endblock%}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css'%}">
 </head>
 <body>
-    <h2>text here</h2>
-    <!-- I CANT EVEN TEST THIS CODE IM CRYING -->
+    <header>
+        {% block header %}
+        <h2>Honkai: Star Rail Characters</h2>
+        <img src="images/hsr_logo.webp" alt="Honkai: Star Rail Logo" height="200px" width="325px">
+        {% endblock %}
+    </header>
+    <nav>
+        <a href="">Home Page</a>
+        <a href="">Characters</a>
+    </nav>
+    <div id="container">
+        {% block container%}
+        {% endblock %}
+    </div>
 </body>
 </html>

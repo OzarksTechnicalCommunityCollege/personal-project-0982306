@@ -12,10 +12,9 @@ class Character(models.Model):
     '''     VARIABLES      '''
     name = models.CharField(max_length=30)
     rarity = models.CharField(max_length=1)
-    path = models.CharField(max_length=10)
+    path = models.CharField(max_length=15)
     element = models.CharField(max_length=10)
     description = models.TextField()
-    image = models.SlugField(max_length=300)
 
     '''     CLASSES      '''
     # meta class to order the characters by name

@@ -1,14 +1,36 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock%}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
-</head>
-<body>
-    <h2>text also here</h2>
-    <!-- I CANT EVEN TEST THIS CODE IM CRYING -->
-</body>
-</html>
+{% extends "characters/index.html" %}
+
+{% block header %}
+{% endblock %}
+
+{% block nav %}
+    
+{% endblock %}
+
+{% block container %}
+<nav>
+    
+</nav>
+<div class="container">
+    <div class="header">
+        <h2>Honkai: Star Rail Characters</h2>
+        <p>This is a list of all the Honkai: Star Rail Characters up to version 3.8!</p>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <p>NAME: {{ ruan_mei.name }}</p>
+            <p>RARITY: {{ ruan_mei.rarity }} Star</p>
+            <p>PATH: </p>
+            <p>ELEMENT: </p>
+            <p>DESCRIPTION: </p>
+        </div>
+        <div class="card">
+            <p>NAME: </p>
+            <p>RARITY: {} Star</p>
+            <p>PATH: </p>
+            <p>ELEMENT: </p>
+            <p>DESCRIPTION: </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -3,9 +3,10 @@ from .models import Character
 
 # function to display the characters
 def character_list(request):
-    lists = Character.all()
+    # issue is on the line below
+    lists = Character
     return render(
         request,
-        'characters/post/list.html',
+        'characters/character/list.html',
         {'lists': lists}
     )

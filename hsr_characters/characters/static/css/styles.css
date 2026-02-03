@@ -1,5 +1,41 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: aquamarine;
+}
+
+
+
+/*  NAVIGATION  */
+nav {
+    width: 60%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+nav a {
+    padding-inline: 20%;
+}
+
+
+
+/*  BODY  */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+
+
+/*  CARDS  */
+.cards {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    padding: 20px;
 }
